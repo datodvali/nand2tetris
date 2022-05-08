@@ -30,7 +30,7 @@ class File:
     def save(self, lines: Iterable[str]) -> None:
         with self.path.open("w", newline="") as file:
             for line in lines:
-                file.write(f"{line}\n")
+                file.write(f"{line}\r\n")
 
 
 def remove_files(pattern: str) -> None:
